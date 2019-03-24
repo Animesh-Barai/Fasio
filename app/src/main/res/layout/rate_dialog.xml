@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rate_text"
+        android:text="Rate this product"
+        android:textColor="@color/text"
+        android:textSize="20sp"
+        />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:numStars="5"
+        android:rating="0"
+        android:id="@+id/rate_bar"
+        android:stepSize="1"/>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll2"
+        android:layout_marginTop="12dp"
+        android:id="@+id/review_it"
+        android:visibility="visible">
+
+        <EditText android:id="@+id/input_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:hint="Review It !*" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:id="@+id/review_btn"
+        android:text="Review"/>
+
+
+</LinearLayout>
+

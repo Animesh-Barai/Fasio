@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:targetApi="lollipop"
+    android:layout_margin="10dp"
+    android:background="@drawable/rectangle"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/rel">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ORDER ID  - "
+            android:id="@+id/order_id_text"
+            android:textSize="14sp"
+            android:layout_below="@+id/lin1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/order_id_text"
+            android:text="112675300100010"
+            android:id="@+id/order_id"
+            android:layout_below="@+id/lin1"
+            android:gravity="center_vertical"
+            android:textColor="@color/text"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/order_id"
+            android:background="@color/devider"
+            android:id="@+id/devider"
+            android:layout_marginRight="0.5dp"
+            android:layout_marginLeft="0.5dp"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/devider"
+            android:id="@+id/recycler_v"
+            android:layout_marginLeft="0.5dp"
+            android:layout_marginRight="0.5dp">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dbdfe1"
+        android:layout_below="@+id/rel"
+        android:id="@+id/view"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/tracking_id"
+        android:textColor="@color/text"
+        android:textSize="15sp"
+        android:text="Delivers in 20days"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/view"/>
+
+
+</RelativeLayout>

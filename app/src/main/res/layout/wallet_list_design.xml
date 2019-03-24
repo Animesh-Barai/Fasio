@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginEnd="16dp"
+    android:background="@drawable/rectangle"
+    android:layout_marginBottom="8dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:targetApi="lollipop">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TRANSCATION ID  - "
+            android:id="@+id/order_id_text"
+            android:textSize="14sp"
+            android:textAllCaps="true"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/order_id_text"
+            android:text="112675300100010"
+            android:id="@+id/transaction_id"
+            android:gravity="center_vertical"
+            android:textColor="@color/text"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/transaction_id"
+            android:background="@color/devider"
+            android:id="@+id/devider"
+            android:layout_marginRight="0.5dp"
+            android:layout_marginLeft="0.5dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/devider"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/trans_type_layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Transaction Type"
+                    android:textSize="14sp"
+                    android:id="@+id/trans_type_text"
+                    android:textColor="@color/text"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/trans_type"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toRightOf="@+id/trans_type_text"
+                    tools:text="Referal"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/trans_amount_layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Transaction Amount"
+                    android:textSize="14sp"
+                    android:id="@+id/trans_amount_text"
+                    android:textColor="@color/text"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/trans_amount"
+                    android:layout_marginLeft="37dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/trans_amount_text"
+                    tools:text="Rs. 209"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/status_layout"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Transcation Status"
+                    android:textSize="14sp"
+                    android:id="@+id/status_text"
+                    android:textColor="@color/text"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/status"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/status_text"
+                    tools:text="cleared"
+                    android:textAllCaps="true"
+                    android:textColor="@color/deliv"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="?attr/actionBarSize"
+            android:fitsSystemWindows="true"
+            app:theme="@style/Mytheme"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+            android:minHeight="?attr/actionBarSize">
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_margin="16dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:textSize="40sp"
+                    android:text="Fashio"
+                    android:gravity="center"
+                    android:id="@+id/splash_text"
+                    android:scaleType="centerCrop"
+                    android:textColor="@color/black"
+                    android:layout_centerHorizontal="true"/>
+
+                <!-- Email Label -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email_layout"
+                    android:theme="@style/EditTextHint"
+                    android:textColorHint="@color/black"
+                    android:layout_below="@+id/splash_text"
+                    android:layout_marginTop="30dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/email"
+                        android:hint="Enter your name"
+                        android:textSize="17sp"
+                        android:backgroundTint="@color/black"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/black"
+                        android:textColorHint="@color/black"
+                        android:inputType="textEmailAddress"
+                        android:textCursorDrawable="@drawable/color_cursor"/>
+
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mobile_layout"
+                    android:layout_marginTop="25dp"
+                    android:theme="@style/EditTextHint"
+                    android:textColorHint="@color/black"
+                    android:layout_below="@+id/email_layout">
+
+
+                    <EditText
+                        android:id="@+id/shiv"
+                        android:textSize="17sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/email_layout"
+                        android:hint="Enter your mobile no"
+                        android:inputType="phone"
+                        android:backgroundTint="@color/black"
+                        android:shadowColor="@color/black"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textCursorDrawable="@drawable/color_cursor" />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/emailid_layout"
+                    android:layout_marginTop="25dp"
+                    android:theme="@style/EditTextHint"
+                    android:textColorHint="@color/black"
+                    android:layout_below="@+id/mobile_layout">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/email_id"
+                        android:textSize="17sp"
+                        android:backgroundTint="@color/black"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/black"
+                        android:hint="Enter your E-mail (Optional)"
+                        android:textColorHint="@color/black"
+                        android:textCursorDrawable="@color/black"
+                        android:inputType="textEmailAddress"/>
+
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </RelativeLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Continue"
+                android:id="@+id/btn"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+

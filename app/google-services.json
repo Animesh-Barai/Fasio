@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "973602588877",
+    "firebase_url": "https://fashio-c0e4c.firebaseio.com",
+    "project_id": "fashio-c0e4c",
+    "storage_bucket": "fashio-c0e4c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:973602588877:android:f53acbea4d49a85e",
+        "android_client_info": {
+          "package_name": "com.fashio.apps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "973602588877-rpbkhmmh910vieh6cli6v6ktbnhh5lff.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoHdaUvmhmFB7hHWA0oUT6SF2OGYoxihs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

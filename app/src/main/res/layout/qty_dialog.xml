@@ -1,0 +1,15 @@
+<LinearLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <customfonts.Regular_Textview
+        android:id="@+id/cat_name"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="XL"
+        android:textColor="@color/colorPrimary"
+        android:textSize="13dp"
+        android:background="@drawable/round_button_light"/>
+
+</LinearLayout>
